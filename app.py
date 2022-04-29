@@ -40,18 +40,18 @@ if img_file is not None:
 
         img = img.convert("RGB")
         img = img.resize((image_size,image_size))
-        in_data = np.asarray(img)
-        X = []
-        X.append(in_data)
-        X = np.array(X)
+        ##in_data = np.asarray(img)
+        ##X = []
+        ##X.append(in_data)
+        ##X = np.array(X)
         # CNNのモデルを構築 --- (※3)
-        model = tomato_chk.build_model(X.shape[1:])
+        ##model = tomato_chk.build_model(X.shape[1:])
 
-        model.load_weights("tomato-color-kpu-model_8_50.hdf5")
+        ##model.load_weights("tomato-color-kpu-model_8_50.hdf5")
       
 # データを予測 --- (※4)
       
-        pre = model.predict(X)
+        ##pre = model.predict(X)
         #st.image(img, caption="対象の画像", width=480)
         #st.write("")
 
@@ -59,6 +59,6 @@ if img_file is not None:
         #results = predict(img)
 
         # 結果の表示
-        st.subheader("判定結果")
+        ##st.subheader("判定結果")
 
-        st.write(categories[y] + "です。")
+        ##st.write(categories[y] + "です。")
