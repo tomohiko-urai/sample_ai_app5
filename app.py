@@ -3,7 +3,7 @@ import model as tomato_chk
 import sys, os
 from PIL import Image
 import numpy as np
-import cv2 
+#import cv2 
 import streamlit as st
 #import matplotlib.pyplot as plt
 #import datetime
