@@ -20,8 +20,8 @@ camerapos = ["0","1","2"]
 
 st.set_option("deprecation.showfileUploaderEncoding", False)
 
-st.sidebar.title("画像認識アプリ")
-st.sidebar.write("オリジナルの画像認識モデルを使って何の画像かを判定します。")
+st.sidebar.title("トマト画像収穫認識アプリ")
+st.sidebar.write("オリジナルの画像認識モデルを使ってトマト収穫判定します。")
 
 st.sidebar.write("")
 
@@ -59,6 +59,6 @@ if img_file is not None:
         #results = predict(img)
 
         # 結果の表示
-        ##st.subheader("判定結果")
+        st.subheader("判定結果")
 
         ##st.write(categories[y] + "です。")
