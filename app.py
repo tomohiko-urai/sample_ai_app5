@@ -52,6 +52,8 @@ if img_file is not None:
 # データを予測 --- (※4)
       
         pre = model.predict(X)
+        y=0
+        y = pre.argmax()
         #st.image(img, caption="対象の画像", width=480)
         #st.write("")
 
